@@ -991,3 +991,264 @@ a.popup:hover{color: rgba(255,255,255,0.8);}
   order: -1;            /* Shift image before other content (in visual order) */
   align-self: center;   /* Center the image cross-wise (horizontally)         */
 }
+
+
+/*Circles*/
+
+#circle-container {
+	margin: auto;
+	max-width: auto;
+	/*height: 700px;*/
+	height: auto;
+	display: block;
+
+}
+
+
+.cssircle-container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.col {
+  width: 100%;
+  padding: 5%;
+  background-color: red;
+  margin-bottom: 5%;
+  border-top: 5px solid red;
+}
+
+
+/* the blue circle with only one line of text, centered vertically */
+.oneline:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: cadetblue;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.oneline:hover:after {
+  background-color: goldenrod;
+}
+.oneline div {
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  line-height: 1em;
+  margin-top: -1.7em;
+  text-align: center;
+  color: white;
+}
+.oneline p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 350px) {
+  .col {
+    display: block;
+    position: relative;
+    width: 39%;
+    margin: auto;
+	margin-top: 25%;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+  }
+  .col .spacer {
+    position: relative;
+    padding-top: 100%;
+  }
+  .colO {
+    display: block;
+    position: relative;
+    width: 15%;
+    margin: auto;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+
+  }
+  .colO .spacer {
+    position: relative;
+    padding-top: 100%;
+  }
+	/* .col:nth-child(3n+1) {
+    margin-left: 1%;
+  }*/
+
+  .circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+    color: #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    border: 5px solid #41c7f7;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .circle:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -2%;
+  }
+  .circle:hover {
+    background-color: maroon;
+    border: 5px solid #4d0000;
+    color: #fff;
+  }
+
+  .outline {
+    border: 5px solid grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+ /* .circle h1 {
+    font-size: 0.9em;
+    line-height: 1em;
+  }
+  .circle p {
+    font-size: 0.8em;
+    line-height: 1em;
+    color: white;
+    text-align: center;
+  }*/
+  .circle a {
+    color: inherit;
+  }
+  .circle > p, .circle > h1, .circle > .wrapcontent {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .circle > p > p, .circle > p > h1, .circle > h1 > p, .circle > h1 > h1, .circle > .wrapcontent > p, .circle > .wrapcontent > h1 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .circle h1 {
+ /*   font-size: 1.2em;*/
+    line-height: 1em;
+  }
+  .circle p {
+ /*   font-size: 1em;*/
+    line-height: 1em;
+  }
+}
+/*@media only screen and (min-width: 768px) {
+  .circle h1 {
+    font-size: 1.6em;
+    line-height: 1em;
+  }
+  .circle p {
+  font-size: 1.2em;
+    line-height: 1em;
+  }
+}
+*/
+
+
+@media screen and (min-width: 1024px) {
+ .circle h1 {
+    font-size: 32px;
+   
+  }
+  .circle p {
+    font-size: 18px;
+	color: #FFFFFF;
+	}
+  .text-top-adjust {
+		margin-top: 21%;
+		margin-left: -35%;
+	}
+  .text-top-adjust1 {
+		margin-top: 21%;
+		margin-left: -10%;
+	}
+  .text-top-adjust2 {
+		margin-top: 21%;
+		margin-left: -21%;
+	}
+	
+}
+
+  
+
+@media screen and (max-width: 1023px) {
+ .circle h1 {
+    font-size: 15px;
+   
+  }
+  .circle p {
+    font-size: 14px;
+	color: #FFFFFF;
+  }
+  .text-top-adjust {
+		margin-top: 21%;
+		margin-left: -33%;
+	}
+	.text-top-adjust1 {
+		margin-top: 21%;
+	}
+	 .text-top-adjust2 {
+		margin-top: 21%;
+		margin-left: -21%;
+	}
+		
+	
+
+}
+
+
+@media screen and (min-width: 1100px) {
+	.circle-icon {
+		max-width: 50px;
+	}
+	/*.text-top-adjust {
+		margin-top: 21%;
+		margin-left: -40%;
+	}*/
+	
+}
+@media screen and (max-width: 1099px) {
+	.circle-icon {
+		max-width: 40px;
+	}
+	
+	
+}
+
+
+/*
+@media screen and (min-width: 1024px) {
+	.circle-text {
+		font-size: 15px;
+		color: 
+	}
+}
+*/
+.mtp-19 {
+	margin-top: 19%;
+}
